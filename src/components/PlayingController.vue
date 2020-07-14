@@ -148,9 +148,6 @@ export default {
     setLoop() {
       this.$bus.$emit('Youtube:setLoop');
     },
-    // getVolume() {
-    //   this.$bus.$emit('getVolume');
-    // },
     setVolume() {
       this.$bus.$emit('Youtube:setVolume', this.volume);
     },
@@ -206,6 +203,7 @@ export default {
 .volume-container {
   position: relative;
 }
+
 .volume-slider {
   display: flex;
   padding: 10px;
@@ -220,15 +218,6 @@ export default {
   z-index: 10;
   border-radius: 10px;
   color: black;
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.2s ease-out;
-}
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
 }
 
 .fade-enter-active,

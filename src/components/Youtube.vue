@@ -57,4 +57,9 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.btn-group {
+  display: flex;
+  justify-content: space-evenly;
+}
+</style>
